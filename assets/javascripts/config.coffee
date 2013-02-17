@@ -19,16 +19,16 @@ define
     routes: "app/routes"
     
     #libs
-    jquery: "libs/jquery/1.9.0/jquery"
-    handlebars: "libs/handlebars/1.0.rc.1/handlebars"
-    ember: "libs/ember/1.0.0-pre.4/ember"
-    jqueryui: "libs/jquery.ui/1.9.2/jquery-ui-1.9.2.custom.min"
-    bootstrap: "libs/bootstrap/2.2.2/js/boostrap"
+    jquery: "vendor/jquery/1.9.1/jquery"
+    handlebars: "vendor/handlebars/1.0.0-rc.3/handlebars"
+    ember: "vendor/ember/1.0.0-rc.1/ember"
+    jqueryui: "vendor/jquery.ui/1.10.0/jquery-ui"
+    bootstrap: "vendor/bootstrap/2.3.0/js/boostrap"
     
     #requirejs-plugins
-    text: "libs/requirejs-plugins/text"
-    hbs: "libs/requirejs-plugins/hbs"
-    domReady: "libs/requirejs-plugins/domReady"
+    text: "vendor/requirejs-plugins/text"
+    hbs: "vendor/requirejs-plugins/hbs"
+    domReady: "vendor/requirejs-plugins/domReady"
 
   #hbs plugin options
   hbs:

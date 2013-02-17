@@ -2,7 +2,7 @@ doctype 5
 html
   head
     title Mimosa
-    link(rel='stylesheet', href='/javascripts/libs/bootstrap/2.2.2/css/bootstrap.css' + cachebust)
+    link(rel='stylesheet', href='/stylesheets/vendor/bootstrap/2.3.0/bootstrap.css' + cachebust)
     link(rel='stylesheet', href='/stylesheets/style.css' + cachebust)
 
     if reload
@@ -12,7 +12,7 @@ html
     if optimize
       script(src='/javascripts/main-built.js')
     else
-      script(src='/javascripts/libs/requirejs/2.1.2/require.js', data-main='/javascripts/main.js')
+      script(src='/javascripts/vendor/requirejs/2.1.4/require.js', data-main='/javascripts/main.js')
 
   body
     //- block content
