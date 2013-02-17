@@ -1,13 +1,10 @@
-(function() {
-
-  require({
-    urlArgs: "b=" + ((new Date()).getTime()),
-    paths: {
-      jquery: 'vendor/jquery'
-    }
-  }, ['app/example-view'], function(ExampleView) {
-    var view = new ExampleView();
-    view.render('body');
-  });
-
-}).call(this);
+(function(root){
+	require(['config'], function(config){
+		requirejs.config(config);
+		require(['App', 'ember'], function(App, Ember){
+			var app_name = config.app_name || 'App';
+			root[app_name] = App = Ember.Application.create(App);
+			App.deferUntilDOMReady();
+		});
+	});
+})(this);
