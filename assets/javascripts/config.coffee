@@ -23,7 +23,7 @@ define
     handlebars: "vendor/handlebars/1.0.0-rc.3/handlebars"
     ember: "vendor/ember/1.0.0-rc.1/ember"
     jqueryui: "vendor/jquery.ui/1.10.0/jquery-ui"
-    bootstrap: "vendor/bootstrap/2.3.0/js/boostrap"
+    bootstrap: "vendor/bootstrap/2.3.0/boostrap"
     
     #requirejs-plugins
     text: "vendor/requirejs-plugins/text"
