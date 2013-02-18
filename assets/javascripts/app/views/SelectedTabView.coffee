@@ -1,8 +1,4 @@
-define [
-	"ember"
-	"controllers/tabListController"
-	"text!app/templates/selectedTabTemplate.html"
-], (Ember, tabListController, selectedTabTemplate) ->
+define ["ember", "controllers/tabListController", "text!app/templates/selectedTabTemplate.html"], (Ember, tabListController, selectedTabTemplate) ->
   Ember.TEMPLATES["selectedTab"] = Ember.Handlebars.compile(selectedTabTemplate)
   
   SelectedTabView = Ember.View.extend(

@@ -1,8 +1,4 @@
-define [
-	"ember"
-	"controllers/tabListController"
-	"views/TabIndexItemView"
-], (Ember, tabListController, TabIndexItemView) ->
+define ["ember", "controllers/tabListController", "views/TabIndexItemView"], (Ember, tabListController, TabIndexItemView) ->
   TabIndexView = Ember.CollectionView.extend(
     tagName: "ul"
     classNames: ["nav", "nav-list"]

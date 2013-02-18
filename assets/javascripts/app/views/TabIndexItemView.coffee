@@ -1,8 +1,4 @@
-define [
-	"ember"
-	"controllers/tabListController"
-	"text!app/templates/tabIndexItemTemplate.html"
-], (Em, tabListController, tabIndexItemTemplate) ->
+define ["ember", "controllers/tabListController", "text!app/templates/tabIndexItemTemplate.html"], (Em, tabListController, tabIndexItemTemplate) ->
   TabIndexItemView = Em.View.extend(
     tagName: "li"
     content: null

@@ -1,8 +1,4 @@
-define [
-	"require"
-	"ember"
-	"controllers/tabListController"
-	], (require, Ember, tabListController) ->
+define ["require", "ember", "controllers/tabListController"], (require, Ember, tabListController) ->
   getTabListController = ->
     tabListController = require("controllers/tabListController") unless tabListController #due to circular dependency
     tabListController
