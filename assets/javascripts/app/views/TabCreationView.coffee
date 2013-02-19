@@ -1,7 +1,7 @@
-define ["ember", "controllers/tabListController", "text!app/templates/tabCreationTemplate.html"], (Em, tabListController, tabCreationTemplate) ->
+define ["ember", "controllers/tabListController", "templates"], (Em, tabListController) ->
   TabCreationView = Em.View.extend(
     content: null
     controller: tabListController
-    template: tabCreationTemplate
+    templateName: "tabCreationTemplate"
   )
   TabCreationView

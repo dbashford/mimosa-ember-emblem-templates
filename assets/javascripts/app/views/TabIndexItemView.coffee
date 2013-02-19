@@ -1,9 +1,9 @@
-define ["ember", "controllers/tabListController", "text!app/templates/tabIndexItemTemplate.html"], (Em, tabListController, tabIndexItemTemplate) ->
+define ["ember", "controllers/tabListController", "templates"], (Em, tabListController) ->
   TabIndexItemView = Em.View.extend(
     tagName: "li"
     content: null
     controller: tabListController
-    template: Ember.Handlebars.compile(tabIndexItemTemplate)
+    templateName: "tabIndexItemTemplate"
     classNameBindings: ["selected"]
     classNames: ["tab-index-item"]
 

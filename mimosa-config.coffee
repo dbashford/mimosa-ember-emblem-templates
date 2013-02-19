@@ -43,12 +43,13 @@ exports.config = {
                                          # encountering EMFILE problems.
 	
 
-  # compilers:
-    # extensionOverrides:       # A list of extension overrides, format is:
+  compilers:
+    extensionOverrides:       # A list of extension overrides, format is:
                                 # [compilerName]:[arrayOfExtensions], see
                                 # http://mimosajs.com/compilers.html for list of compiler names
       # coffee: ["coff"]        # This is an example override, this is not a default, must be
                                 # array of strings
+      handlebars: null
 
   # template:
     # amdWrap: true                   # Whether or not to wrap the compiled template files in

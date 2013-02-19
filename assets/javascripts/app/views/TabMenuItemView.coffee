@@ -1,7 +1,7 @@
-define ["ember", "controllers/tabListController", "text!app/templates/tabMenuItemTemplate.html"], (Em, tabListController, tabMenuItemTemplate) ->
+define ["ember", "controllers/tabListController", "templates"], (Em, tabListController) ->
   TabMenuItemView = Em.View.extend(
     tagName: "li"
-    template: Ember.Handlebars.compile(tabMenuItemTemplate)
+    templateName: "tabMenuItemTemplate"
     controller: tabListController
     classNameBindings: ["selected"]
     selected: (->

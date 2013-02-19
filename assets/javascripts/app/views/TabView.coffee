@@ -1,7 +1,7 @@
-define ["ember", "text!app/templates/tabTemplate.html"], (Ember, tabTemplate) ->
+define ["ember", "templates"], (Ember) ->
   TabView = Ember.View.extend(
     classNames: ["tab"]
-    template: Ember.Handlebars.compile(tabTemplate)
+    templateName: "tabTemplate"
   )
 
   TabView

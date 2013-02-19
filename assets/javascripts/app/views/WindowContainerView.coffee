@@ -1,7 +1,7 @@
-define ["ember", "text!app/templates/windowContainerTemplate.html",	"jqueryui"], (Ember, windowContainerTemplate) ->
+define ["ember", "templates",	"jqueryui"], (Ember) ->
   WindowContainerView = Ember.View.extend(
     classNames: ["window-container"]
-    template: Ember.Handlebars.compile(windowContainerTemplate)
+    templateName: "windowContainerTemplate"
 
     didInsertElement: ->
       @$().draggable

@@ -10,12 +10,14 @@ define
       
     jqueryui: ["jquery"]
 
+    templates: ["handlebars", "ember"]
+
   paths:
     App: "app/main"
     models: "app/models"
     views: "app/views"
     controllers: "app/controllers"
-    templates: "app/templates"
+    # templates: "app/templates"
     routes: "app/routes"
     
     #libs
@@ -24,6 +26,7 @@ define
     ember: "vendor/ember/1.0.0-rc.1/ember"
     jqueryui: "vendor/jquery.ui/1.10.0/jquery-ui"
     bootstrap: "vendor/bootstrap/2.3.0/boostrap"
+    templates: "templates"
     
     #requirejs-plugins
     text: "vendor/requirejs-plugins/text"

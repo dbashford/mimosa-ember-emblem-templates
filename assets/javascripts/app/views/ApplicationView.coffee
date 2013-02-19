@@ -1,5 +1,5 @@
-define ["ember", "text!app/templates/applicationTemplate.html"], (Ember, applicationTemplate) ->
+define ["ember", "templates"], (Ember) ->
   ApplicationView = Ember.View.extend(
-  	defaultTemplate: Ember.Handlebars.compile(applicationTemplate)
+  	defaultTemplate: Ember.TEMPLATES["applicationTemplate"]
   )
   ApplicationView
