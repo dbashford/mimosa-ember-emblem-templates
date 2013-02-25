@@ -1,0 +1,3 @@
+.navbar
+  .navbar-inner
+    MyExampleApp.TabMenuView

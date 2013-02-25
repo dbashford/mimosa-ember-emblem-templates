@@ -1,0 +1,3 @@
+MyExampleApp.WindowContainerView
+MyExampleApp.TabView
+| {{outlet}}
