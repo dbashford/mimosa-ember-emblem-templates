@@ -2,16 +2,16 @@ if view.editing
   form.form-inline.editableform
     input value=view.content.name type="text" maxlength="30"
     .buttons
-      button.btn.btn-primary{action changeTitle target="view" on="click"} type="button"
+      button.btn.btn-primary click='changeTitle target="view"' type="button"
         i.icon-ok.icon-white
-      button.btn{action toggleEditing target="view" on="click"} type="button"
+      button.btn click='toggleEditing target="view"' type="button"
         i.icon-remove
 else
   a href=view.content.link
     i.icon-resize-vertical
-    | {{view.content.name}}
+    = view.content.name
     .buttons.pull-right
-      button.btn{action toggleEditing target="view" on="click"} type="button"
+      button.btn click='toggleEditing target="view"' type="button"
         i.icon-pencil
-      button.btn.btn-danger{action removeTab target="view" on="click"} type="button"
+      button.btn.btn-danger click='removeTab target="view"' type="button"
         i.icon-remove-sign.icon-white
