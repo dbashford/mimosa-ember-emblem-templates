@@ -1,1 +1,1 @@
-a href=view.content.link {{view.content.name}}
+a href=view.content.link = view.content.name
