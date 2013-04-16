@@ -1,9 +1,8 @@
 root = this
 
-require ["config"], (config) ->
-  requirejs.config config
-  
+require ["common"], ->
+
   require ["App", "ember"], (App, Ember) ->
-    app_name = config.app_name or "App"
+    app_name = "MyExampleApp"
     root[app_name] = App = Ember.Application.create(App)
     App.deferUntilDOMReady()

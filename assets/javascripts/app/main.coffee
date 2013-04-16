@@ -10,12 +10,12 @@ define [
   "app/router"
   "routes/IndexRoute"
   "routes/SelectedTabRoute"
-  "javascripts/fixtures/tabFixtures.js"
+  "fixtures/tabFixtures"
   ], (ApplicationView, WindowContainerView, TabIndexView, SelectedTabView, TabMenuView, TabView, ApplicationController, tabListController, Router, IndexRoute, SelectedTabRoute, tabFixtures) ->
-  
+
   #setup
   tabListController.addTabs tabFixtures.tabs
-  
+
   #Module Pattern
   App =
     ApplicationView: ApplicationView

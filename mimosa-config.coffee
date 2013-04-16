@@ -1,5 +1,6 @@
 exports.config =
-  minMimosaVersion:"0.10.1"
+  modules: ['lint', 'server', 'require', 'minify', 'live-reload', 'web-package']
+  minMimosaVersion:"0.11.3"  # need at least 0.11.3 to take advantage of requirejs common config
   template:
     handlebars:
       ember:
@@ -7,6 +8,3 @@ exports.config =
         path: "ember"    # location of the Ember library, requirejs path
   server:
     path: 'server.js'
-  require:
-    verify:
-      enabled:false # pending mimosa-require#9
