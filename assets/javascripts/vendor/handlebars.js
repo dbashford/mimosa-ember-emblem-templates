@@ -25,6 +25,9 @@ THE SOFTWARE.
 // lib/handlebars/base.js
 
 /*jshint eqnull:true*/
+
+define(function() {
+
 this.Handlebars = {};
 
 (function(Handlebars) {
@@ -2199,3 +2202,7 @@ Handlebars.VM = {
 
 Handlebars.template = Handlebars.VM.template;
 ;
+
+return Handlebars;
+
+})
