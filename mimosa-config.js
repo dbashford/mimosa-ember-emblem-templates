@@ -1,5 +1,5 @@
 exports.config = {
-  minMimosaVersion: '2.0.0',
+  minMimosaVersion: '2.1.0',
   modules: [
     'jshint',
     'csslint',
@@ -9,13 +9,12 @@ exports.config = {
     'minify-css',
     'live-reload',
     'web-package',
-    'emblem',
+    'emblem@2.0.0',
     'coffeescript',
-    'copy'],
+    'copy',
+    'bower'
+  ],
   emblem: {
-    // need specific versions of emblem and handlebars for compatibility
-    lib: require('emblem'),
-    handlebars: require('handlebars'),
     emberPath: 'ember'
   },
   server: {

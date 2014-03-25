@@ -1,4 +1,4 @@
-doctype 5
+doctype html
 html
   head
     title Mimosa
@@ -12,7 +12,7 @@ html
     if optimize
       script(src='/javascripts/main-built.js')
     else
-      script(src='/javascripts/vendor/requirejs/2.1.4/require.js', data-main='/javascripts/main.js')
+      script(src='/javascripts/vendor/requirejs/require.js', data-main='/javascripts/main.js')
 
   body
     //- block content

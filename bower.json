@@ -1,0 +1,10 @@
+{
+  "name": "ember-emblem-templates",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": "2.0.3",
+    "jqueryui": "1.10.4",
+    "requirejs": "2.1.8",
+    "ember": "1.5.0-beta.4"
+  }
+}

@@ -13,11 +13,8 @@ requirejs.config
     routes: "app/routes"
 
     #libs
-    jquery: "vendor/jquery/1.9.1/jquery"
-    handlebars: "vendor/handlebars/1.0.0/handlebars"
-    ember: "vendor/ember/1.0.0-rc.7/ember"
-    jqueryui: "vendor/jquery.ui/1.10.0/jquery-ui"
+    jquery: "vendor/jquery/jquery"
+    handlebars: "vendor/handlebars/handlebars"
+    ember: "vendor/ember/ember"
+    jqueryui: "vendor/jqueryui/jquery-ui"
     bootstrap: "vendor/bootstrap/2.3.0/bootstrap"
-  hbs:
-    disableI18n: true
-    templateExtension: "html"

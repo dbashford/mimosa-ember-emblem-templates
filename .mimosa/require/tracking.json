@@ -1,0 +1,159 @@
+{
+  "shims": {
+    "/javascripts/common.js": {
+      "ember": {
+        "deps": [
+          "handlebars",
+          "jquery"
+        ],
+        "exports": "Ember"
+      },
+      "jqueryui": [
+        "jquery"
+      ]
+    }
+  },
+  "deps": {
+    "/javascripts/app/controllers/ApplicationController.js": [
+      "ember"
+    ],
+    "/javascripts/app/controllers/tabListController.js": [
+      "models/TabModel"
+    ],
+    "/javascripts/app/main.js": [
+      "views/ApplicationView",
+      "views/WindowContainerView",
+      "views/TabIndexView",
+      "views/SelectedTabView",
+      "views/TabMenuView",
+      "views/TabView",
+      "controllers/ApplicationController",
+      "controllers/tabListController",
+      "app/router",
+      "routes/IndexRoute",
+      "routes/SelectedTabRoute",
+      "fixtures/tabFixtures"
+    ],
+    "/javascripts/app/models/TabModel.js": [
+      "require",
+      "ember",
+      "controllers/tabListController"
+    ],
+    "/javascripts/app/router.js": [
+      "ember"
+    ],
+    "/javascripts/app/routes/IndexRoute.js": [
+      "ember",
+      "controllers/tabListController"
+    ],
+    "/javascripts/app/routes/SelectedTabRoute.js": [
+      "ember",
+      "controllers/tabListController"
+    ],
+    "/javascripts/app/views/ApplicationView.js": [
+      "ember",
+      "templates"
+    ],
+    "/javascripts/app/views/SelectedTabView.js": [
+      "ember",
+      "controllers/tabListController",
+      "templates"
+    ],
+    "/javascripts/app/views/TabCreationView.js": [
+      "ember",
+      "controllers/tabListController",
+      "templates"
+    ],
+    "/javascripts/app/views/TabIndexItemView.js": [
+      "ember",
+      "controllers/tabListController",
+      "templates"
+    ],
+    "/javascripts/app/views/TabIndexView.js": [
+      "ember",
+      "controllers/tabListController",
+      "views/TabIndexItemView"
+    ],
+    "/javascripts/app/views/TabMenuItemView.js": [
+      "ember",
+      "controllers/tabListController",
+      "templates"
+    ],
+    "/javascripts/app/views/TabMenuView.js": [
+      "ember",
+      "controllers/tabListController",
+      "views/TabMenuItemView"
+    ],
+    "/javascripts/app/views/TabView.js": [
+      "ember",
+      "templates"
+    ],
+    "/javascripts/app/views/WindowContainerView.js": [
+      "ember",
+      "templates",
+      "jqueryui"
+    ],
+    "/javascripts/common.js": [],
+    "/javascripts/fixtures/tabFixtures.js": [],
+    "/javascripts/main.js": [
+      "common",
+      "App",
+      "ember"
+    ],
+    "/javascripts/templates.js": [
+      "ember"
+    ],
+    "/javascripts/vendor/handlebars.js": []
+  },
+  "aliases": {
+    "/javascripts/common.js": {
+      "App": "app/main",
+      "models": "app/models",
+      "views": "app/views",
+      "controllers": "app/controllers",
+      "routes": "app/routes",
+      "jquery": "vendor/jquery/jquery",
+      "handlebars": "vendor/handlebars/handlebars",
+      "ember": "vendor/ember/ember",
+      "jqueryui": "vendor/jqueryui/jquery-ui",
+      "bootstrap": "vendor/bootstrap/2.3.0/bootstrap"
+    }
+  },
+  "mappings": {
+    "/javascripts/common.js": null
+  },
+  "packages": {
+    "/javascripts/common.js": null
+  },
+  "originalConfig": {
+    "shim": {
+      "ember": {
+        "deps": [
+          "handlebars",
+          "jquery"
+        ],
+        "exports": "Ember"
+      },
+      "jqueryui": [
+        "jquery"
+      ]
+    },
+    "paths": {
+      "App": "app/main",
+      "models": "app/models",
+      "views": "app/views",
+      "controllers": "app/controllers",
+      "routes": "app/routes",
+      "jquery": "vendor/jquery/jquery",
+      "handlebars": "vendor/handlebars/handlebars",
+      "ember": "vendor/ember/ember",
+      "jqueryui": "vendor/jqueryui/jquery-ui",
+      "bootstrap": "vendor/bootstrap/2.3.0/bootstrap"
+    }
+  },
+  "requireFiles": [
+    "/javascripts/app/models/TabModel.js",
+    "/javascripts/common.js",
+    "/javascripts/main.js"
+  ]
+}
