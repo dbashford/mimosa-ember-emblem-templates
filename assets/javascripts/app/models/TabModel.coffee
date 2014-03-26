@@ -8,10 +8,10 @@ define ["require", "ember", "controllers/tabListController"], (require, Ember, t
     content: null
     order: null
 
-    init: ->
-      @_super()
+    registerTab: (->
       getTabListController()
       @notifyPropertyChange "name"
+    ).on('init')
 
     onChangeName: ((key, value) ->
       slug = tabListController.createUniqueSlug(@get("name"))
