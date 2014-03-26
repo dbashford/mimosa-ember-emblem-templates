@@ -3,7 +3,7 @@ define ["ember", "controllers/tabListController", "templates"], (Em, tabListCont
     tagName: "li"
     content: null
     controller: tabListController
-    templateName: "tabIndexItemTemplate"
+    templateName: "tabIndexItem"
     classNameBindings: ["selected"]
     classNames: ["tab-index-item"]
 
@@ -18,7 +18,7 @@ define ["ember", "controllers/tabListController", "templates"], (Em, tabListCont
         controller.removeTab tab
 
       toggleEditing: ->
-        @set "editing", not @get("editing")
+        @toggleProperty "editing"
 
       changeTitle: ->
         new_name = @$("input").val()

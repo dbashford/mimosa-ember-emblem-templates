@@ -14,20 +14,15 @@
     }
   },
   "deps": {
-    "/javascripts/app/controllers/ApplicationController.js": [
-      "ember"
-    ],
     "/javascripts/app/controllers/tabListController.js": [
       "models/TabModel"
     ],
     "/javascripts/app/main.js": [
-      "views/ApplicationView",
       "views/WindowContainerView",
       "views/TabIndexView",
       "views/SelectedTabView",
       "views/TabMenuView",
       "views/TabView",
-      "controllers/ApplicationController",
       "controllers/tabListController",
       "app/router",
       "routes/IndexRoute",
@@ -102,8 +97,7 @@
     ],
     "/javascripts/templates.js": [
       "ember"
-    ],
-    "/javascripts/vendor/handlebars.js": []
+    ]
   },
   "aliases": {
     "/javascripts/common.js": {

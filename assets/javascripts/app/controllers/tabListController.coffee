@@ -24,7 +24,6 @@ define ["models/TabModel"], (TabModel) ->
 
   tabListController = Em.ArrayController.createWithMixins(
     selected: null
-    content: []
     sortProperties: ["order"]
     sortAscending: true
 
