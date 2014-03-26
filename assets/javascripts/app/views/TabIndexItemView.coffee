@@ -27,7 +27,6 @@ define ["ember", "controllers/tabListController", "templates"], (Em, tabListCont
 
     onChangeEditing: (->
       if @get("editing")
-        Em.run.end()
         @$("input").focus()
     ).observes("editing")
 
