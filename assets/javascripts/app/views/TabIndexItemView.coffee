@@ -11,18 +11,19 @@ define ["ember", "controllers/tabListController", "templates"], (Em, tabListCont
       "active"  if @get("content") is @get("controller.selected")
     ).property("controller.selected").cacheable()
 
-    removeTab: (e) ->
-      tab = @get("content")
-      controller = @get("controller")
-      controller.removeTab tab
+    actions:
+      removeTab: (e) ->
+        tab = @get("content")
+        controller = @get("controller")
+        controller.removeTab tab
 
-    toggleEditing: ->
-      @set "editing", not @get("editing")
+      toggleEditing: ->
+        @set "editing", not @get("editing")
 
-    changeTitle: ->
-      new_name = @$("input").val()
-      @set "content.name", new_name
-      @set "editing", false
+      changeTitle: ->
+        new_name = @$("input").val()
+        @set "content.name", new_name
+        @set "editing", false
 
     onChangeEditing: (->
       if @get("editing")
