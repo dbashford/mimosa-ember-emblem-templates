@@ -9,7 +9,7 @@ exports.config = {
     'minify-css',
     'live-reload',
     'web-package',
-    'emblem@2.0.0',
+    'emblem@2.0.1',
     'coffeescript',
     'copy',
     'bower'

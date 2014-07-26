@@ -45,16 +45,7 @@
       "ember",
       "controllers/tabListController"
     ],
-    "/javascripts/app/views/ApplicationView.js": [
-      "ember",
-      "templates"
-    ],
     "/javascripts/app/views/SelectedTabView.js": [
-      "ember",
-      "controllers/tabListController",
-      "templates"
-    ],
-    "/javascripts/app/views/TabCreationView.js": [
       "ember",
       "controllers/tabListController",
       "templates"
@@ -97,7 +88,8 @@
     ],
     "/javascripts/templates.js": [
       "ember"
-    ]
+    ],
+    "/javascripts/vendor/handlebars.js": []
   },
   "aliases": {
     "/javascripts/common.js": {
