@@ -15,7 +15,7 @@
   },
   "deps": {
     "/javascripts/app/controllers/tabListController.js": [
-      "models/TabModel"
+      "app/models/TabModel"
     ],
     "/javascripts/app/main.js": [
       "views/WindowContainerView",
@@ -94,7 +94,6 @@
   "aliases": {
     "/javascripts/common.js": {
       "App": "app/main",
-      "models": "app/models",
       "views": "app/views",
       "controllers": "app/controllers",
       "routes": "app/routes",
@@ -126,7 +125,6 @@
     },
     "paths": {
       "App": "app/main",
-      "models": "app/models",
       "views": "app/views",
       "controllers": "app/controllers",
       "routes": "app/routes",

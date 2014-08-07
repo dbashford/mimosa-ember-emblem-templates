@@ -7,7 +7,6 @@ requirejs.config
     jqueryui: ["jquery"]
   paths:
     App: "app/main"
-    models: "app/models"
     views: "app/views"
     controllers: "app/controllers"
     routes: "app/routes"

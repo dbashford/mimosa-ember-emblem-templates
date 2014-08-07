@@ -1,4 +1,4 @@
-define ["models/TabModel"], (TabModel) ->
+define ["app/models/TabModel"], (TabModel) ->
   helper =
     slugify: (str) ->
       return ""  unless str

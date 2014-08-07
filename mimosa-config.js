@@ -12,7 +12,9 @@ exports.config = {
     'emblem@2.0.2',
     'coffeescript',
     'copy',
-    'bower'
+    'bower',
+    'handlebars-on-window',
+    'fix-rjs-ember'
   ],
   emblem: {
     emberPath: 'ember'
